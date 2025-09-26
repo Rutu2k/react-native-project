@@ -11,8 +11,8 @@ import {
 import { useAuth } from '../context/AuthContext';
 
 const LoginScreen = () => {
-  const [username, setUsername] = useState('kminchelle');
-  const [password, setPassword] = useState('0lelplR');
+  const [username, setUsername] = useState('emilys');
+  const [password, setPassword] = useState('emilyspass');
   const { login, isLoading, error } = useAuth();
 
   const handleLogin = async () => {
@@ -67,11 +67,6 @@ const LoginScreen = () => {
           <Text style={styles.loginButtonText}>Login</Text>
         )}
       </TouchableOpacity>
-
-      <Text style={styles.apiInfo}>
-        Using DummyJSON API (https://dummyjson.com)
-        {'\n'}Try: kminchelle / 0lelplR
-      </Text>
     </View>
   );
 };
